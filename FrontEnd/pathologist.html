@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    
+    <style>
+        
+        a{
+            color: darkblue;
+        }
+        td{
+            text-align: center;
+            align-content: center;
+            height: 40px;width: 150px;
+            font-size: 14px;
+        }
+    </style> 
+    <script src="pathologist.js"></script>
+    <title>Welcome Pathologist</title>
+  </head>
+  <body style="background-color: azure">
+    <div style="overflow: auto;color: darkblue; ">
+       <p id="welcomeMessage" style="margin-top: 10px; margin-right:10px;float:right">User Name
+       </p>
+        <h2 style="margin-top: 10px; margin-left:5px">Pathologist</h2>
+         <a href="login.html" style="float: right; font-size: 11px;margin-right: 20px;" onclick="return logOut();">Log Out</a>
+         <br>
+        
+           
+    </div>
+    <div style="background-color: gainsboro;">
+   <table >
+        <tr>
+        
+        <td style=" background-color: cyan">    
+            <a href="pathologist.html" id="homePatho">Home</a>&nbsp;&nbsp;
+        </td>
+        <td >
+            <a href="listMyPathoTest.html" id="listTests">Assigned To Me</a>&nbsp;&nbsp;
+        </td>
+        <td>
+            <a href="updatePathoTest.html" id="uploadTest">Edit Tests</a>&nbsp;&nbsp;
+        </td>
+        <td >
+            <a href="searclPathoTest.html" id="searchExam">Search Tests</a>&nbsp;&nbsp;
+        </td>
+            
+    </tr>
+      </table>
+      </div>
+    <hr>
+    <div class="class mt-3 ml-3 justify-content-center">
+       <center>
+        <h3 id="slideShow1">Details</h3>
+        <a href="listMyPathoTest.html"><img src="displayPics/myTests1.jpg" class="slideShow w3-animate-left"></a>
+        <a href="updatePathoTest.html"><img src="displayPics/testEdit4.jpg" class="slideShow w3-animate-left"></a>
+        <a href="searclPathoTest.html"><img src="displayPics/search.jpg" class="slideShow w3-animate-left"></a>
+        
+        
+        </center>
+        
+    </div>
+    <br>
+    <br>
+    <hr>
+    <img src="displayPics/greenCross.jpg" style="height: 50px;">
+    <br>
+    <br>
+        
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

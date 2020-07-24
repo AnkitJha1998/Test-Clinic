@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+      <style>
+          td,th{
+              padding: 15px;
+          }
+      </style>
+      <script src="addPathoSubTest.js"></script>
+   
+    <title>Add Pathology Sub-Test</title>
+  </head>
+  <body style="background-color: azure">
+   
+   
+   <div class="container" style="margin-top: 20px;background-image: url(displayPics/testEntry3.png); background-repeat: repeat-y">
+        <section class="row">
+            <div class="col-8" >
+               
+               <h3>Enter Pathology Test Details</h3>
+                <br>
+                <form name="testDetails">
+                    <table style="border: 1px solid">
+                        <tr>
+                            <td>Test Name <span style="color: red">*</span></td>
+                            <td><select id="pathoTest" style="padding: 5px">
+                                      <option value="FULL_BODY_EXAMINATION">FULL_BODY_EXAMINATION</option>
+                                      <option value="IRON_STUDY">IRON_STUDY</option>
+                                      <option value="TSH">TSH</option>
+                                      <option value="URINALYSIS">URINALYSIS</option>
+                                      <option value="INR">INR</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Test Details<span style="color: red">*</span></td>
+                            <td>
+                                <textarea input type="text" id="examDetails" name="examDetails"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Patient Id</td>
+                            <td><input type="text" id="patId" name="patId" disabled></td>
+                        </tr>
+                        <tr>
+                            <td>Doctor Id</td>
+                            <td><input type="text" id="docId" name="docId" disabled></td>
+                        </tr>
+                        <td>Test Status <span style="color: red">*</span></td>
+                        <td><select id="pathoTestStat" style="padding: 5px">
+                                      <option value="INITIATED">INITIATED</option>
+                                      <option value="SAMPLE_ANALYSED">SAMPLE_ANALYSED</option>
+                                      <option value="IN_PROGRESS">IN_PROGRESS</option>
+                                      <option value="REPORT_READY">REPORT_READY</option>
+                                      
+                            </select></td>
+                    </table>
+                    <br>
+                    <br>
+                    <h3>Search For Pathologist</h3>
+                    <table style="border: 1px solid">
+                        <tr>
+                            <td>First Name</td>
+                            <td><input  type="text" id="empFirstNameInp" name="empFirstNameInp"></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name</td>
+                            <td><input  type="text" id="empLastNameInp" name="empLastNameInp"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" style="border-radius: 20px;" value="Search" onclick="return listPathologists()"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <br>
+                    <h4 id="headerTag">Pathologist</h4>
+                    <table id="searchResults" style="border: 1px solid">
+                        <tr>
+                            
+                        </tr>
+                    </table>
+                    <br>
+                    <br>
+                    <input type="button" style="border-radius: 20px" value="Update" onclick="return addData()" >
+                    <input type="button" value="Go Back" style="border-radius: 20px" onclick="return goBack()">
+                </form>
+                
+            </div>
+        </section>
+    </div>
+    <hr>
+    <br>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

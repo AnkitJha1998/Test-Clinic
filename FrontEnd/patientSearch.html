@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <style>
+        h5{
+            margin: 10px;
+            margin-left: 20px;
+        }  
+        .top{
+            padding: 15px;
+        }
+        a{
+            color:darkblue;
+        }
+    </style>
+    <script src="patientSearch.js"></script>
+    <title>Search For Patients</title>
+  </head>
+  <body style="background-color: azure">
+    <div style="overflow: auto; height=170px font-size: 16px;">
+       <img src="logoCerner.png" style="float: right;height: 40px" >
+       
+        <center><h2 style="margin-top: 5px">Patient Search Portal</h2></center>
+        <a href="login.html" id="log out" style="font-size: 11px; float: right;color: darkblue" onclick="return logOut()">Log Out</a>
+    
+        <br>
+        <div style="background-color: gainsboro;"> 
+        <table style="text-align: center;">
+        <tr>
+        
+        <td style="height: 40px;width: 150px; font-size: 14px ;">    
+            <a href="receptionist.html" >Home</a>
+        </td>
+        <td style="height: 40px;width: 150px; font-size: 14px ;">
+            <a href="patientDetails.html" id="patient">Patient Entry</a>&nbsp;&nbsp;
+        </td>
+        <td style="height: 40px;width: 150px; font-size: 14px ;">
+            <a id="test" href="testEntry.html">Test Entry</a>&nbsp;&nbsp;
+        </td>
+        <td style="height: 40px;width: 150px; background-color: cyan; font-size: 14px ;">
+            <a href="patientSearch.html" id="searchPat">Search Patient</a>&nbsp;&nbsp;
+        </td>
+        <td style="height: 40px;width: 150px; font-size: 14px ;">
+            <a id="searchTest" href="testSearchReception.html">Search Test Status</a>&nbsp;&nbsp;
+        </td>
+        
+    </tr>
+    </table>
+    </div>
+    </div>
+    
+    <div class="container" style="margin-top: 20px;background-image: url(displayPics/search.jpg);">
+        <section class="row justify-content-center">
+            <div class="col-9 " style="align-content: center">
+            <center><h3>Search Patients</h3></center>
+            <br>
+            <form name="searchParam">
+            <center>
+            <input type="radio" value="By Name" name="chooseSearch" onClick="return toggle(1)">Search By Name  &emsp;&emsp;&emsp;
+            <input type="radio" value="By Id" name="chooseSearch" onClick="return toggle(2)">Search By Id
+            </center>
+            <div id="nameSearch" style="margin-left: 20px;">
+                <table>
+                   <tr>
+                    <td class="top">First Name</td>
+                    <td class="top"><input type="text" name="fName" id="fName"></td>
+                   </tr>
+                   <tr>
+                    <td class="top">Last Name</td>
+                    <td class="top"><input type="text" name="lName" id="lName"></td>
+                   </tr>
+                </table>
+                <input type="button" value="Search Patients" style="border-radius: 20px; padding: 5px;" onclick="return searchByName()">
+            </div>
+            <div id="idSearch" style="margin-left: 20px;">
+                <table>
+                   <tr>
+                    <td class="top">Patient Id</td>
+                    <td class="top"><input type="text" name="patId" id="patId"></td>
+                   </tr>
+                </table>
+                <input type="button" value="Search Patients" style="border-radius: 20px; padding: 5px;" onclick="return searchById()">
+            </div>
+            
+            
+            <table id="searchRes">
+               
+                
+            </table>
+            <table id="searchResTests">
+                
+            </table>
+            </form>
+            
+            </div>
+        </section>
+      </div>
+        <hr>
+        <br>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

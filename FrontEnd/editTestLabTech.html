@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Assign Sub-Test</title>
+    <style>
+    
+        .other{
+            padding: 15px;
+        }
+        .top{
+            font-size: 14px;   
+            
+            
+        }
+        a{
+            color: darkblue;
+        }
+            
+    </style>
+    <script src="editTestLabTech.js"></script>
+  </head>
+  <body style="background-color: azure">
+    <div style="overflow: auto; height=150px; font-size: 16px; height:150px;">
+       <img src="logoCerner.png" style="float: right;height: 40px" >
+       
+        <center><h2 style="margin-top: 5px">Edit Test Details</h2></center>
+        <a href="login.html" id="log out" style="font-size: 11px; float: right;color: darkblue" onclick="return logOut()">Log Out</a>
+        
+        <br>
+        <div style="background-color: gainsboro;">
+        <table style="text-align: center; font-size: 16px ">
+        <tr>
+        
+        <td class="top" style="height: 40px;width: 150px;">    
+            <a href="labTechnician.html" >Home</a>
+        </td>
+        <td class="top" style="height: 40px;width: 150px; background-color: cyan">
+            <a href="editTestLabTech.html" id="patient">Edit Test Details</a>&nbsp;&nbsp;
+        </td>
+        <td class="top" style="height: 40px;width: 150px;">
+            <a id="test" href="downloadTestRes.html">Test Results</a>&nbsp;&nbsp;
+        </td>
+        <td class="top" style="height: 40px;width: 150px;">
+            <a href="assignSubTest.html" id="searchPat">Assign Sub-Tests</a>&nbsp;&nbsp;
+        </td>
+        <td class="top" style="height: 40px;width: 150px;">
+            <a id="searchTest" href="searchTestLabTech.html">Search Tests</a>&nbsp;&nbsp;
+        </td>
+        
+    </tr>
+    </table>
+     </div>
+      </div>
+     <div class="container" style="background-color: azure; background-image: url(displayPics/testEdit1.png); background-repeat: no-repeat;background-position: center">
+        <section class="row ">
+            <div class="col-8 ">
+             <form name="testDet">  
+            <center>
+                <h3>Search For Tests</h3>
+                <br>
+            </center>
+            
+                <b><input type="radio" name="chooseSearch" value="patientId" onclick="return toggle(1)" style="margin-left: 25px;">By Patient Id</b>&emsp;&emsp;
+                <b><input type="radio" name="chooseSearch" value="OwnId" onclick="return toggle(2)" style="margin-left: 50px;">Assigned To Me</b>&emsp;&emsp;
+                <b><input type="radio" name="chooseSearch" value="LabTechId" onclick="return toggle(3)" style="margin-left: 50px;">By Lab Technician Id<br></b>
+                <br>
+                <br>
+            <div id="patIdDiv">
+                <table style="margin-left: 40px;"><tr>
+                    <td class="other">Patient Id</td>
+                    <td class="other"><input type="text" name="patId" id="patId"></td>
+                    <td><input type="button" value="Search" onclick="return loadPatSearch()"></td>
+                </tr></table>
+            </div>
+            <div id="toMeDiv">
+                
+            </div>
+            <div id="labTechIdDiv">
+                <table style="margin-left: 40px;"><tr>
+                    <td class="other">Lab Technician Id</td>
+                    <td class="other"><input type="text" name="labtechId" id="labTechId"></td>
+                    <td><input type="button" value="Search" onclick="return loadLabTechSearch()"></td>
+                </tr></table>
+            </div>
+            <table id="searchRes" style="border: 1px solid;">
+                
+            </table>
+            <div id="editDetails">
+          <table>
+              <tr>
+                  <th class="other">Test Name</th>
+                  <td class="other"><input type="text" id="testName" name="testName"></td>
+              </tr>
+              <tr>
+                  <th class="other">Test Details</th>
+                  <td class="other"><textarea input type="text" id="testDetails" name="testDetails"></textarea></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td><br></td>
+              </tr>
+              <tr>
+                  <td><input style="border-radius: 20px;float: right" value="Back" type="button" onclick="goBack()"></td>
+                  <td><input style="border-radius: 20px" type="button" value="Update Test Details" onclick="return updateFunction()"></td>
+              </tr>
+          </table>
+      </div>
+            </form>
+            </div>
+         </section>
+      </div>
+      
+     <hr>
+     <br>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <style>
+        
+        a{
+            color: darkblue;
+        }
+        td{
+            text-align: center;
+            align-content: center;
+            height: 40px;width: 150px;
+            font-size: 14px;
+        }
+    </style>
+    
+        
+   <script src="labTechnician.js"></script>
+    <title>Welcome Lab Technician</title>
+  </head>
+  <body style="background-color: azure">
+   
+     <div style="overflow: auto;color: darkblue; ">
+       <p id="welcomeMessage" style="margin-top: 10px; margin-right:10px;float:right">User Name
+       </p>
+       
+        <h2 style="margin-top: 10px; margin-left:5px">Lab Technician</h2>
+        <a href="login.html" id="log out" style="font-size: 11px; margin-right: 20px; float: right;color: darkblue" onclick="return logOut()">Log Out</a>
+        <br>   
+    </div>
+    <div style="background-color: gainsboro;">
+   <table>
+        <tr>
+        
+        <td style=" background-color: cyan">    
+            <a href="labTechnician.html" id="homeLabTech">Home</a>&nbsp;&nbsp;
+        </td>
+        <td >
+            <a href = "editTestLabTech.html" id="testEdit">Edit Test Details</a>&nbsp;&nbsp;
+        </td>
+        <td >
+            <a href="downloadTestRes.html" id="testDownloadRes">Test Results</a>&nbsp;&nbsp;
+        </td>
+        <td >
+            <a id="test" href="assignSubTest.html">Assign Sub-Tests</a>&nbsp;&nbsp;
+        </td>
+        <td >
+            <a href="searchTestLabTech.html" id="searchExam">Search Tests</a>&nbsp;&nbsp;
+        </td>
+            
+    </tr>
+      </table>
+      </div>
+    
+    <div class="class mt-3 ml-3 justify-content-center">
+       <center>
+        <h3 id="slideShow1">Details</h3>
+        <a href="editTestLabTech.html"><img src="displayPics/testDetailEdit.png" class="slideShow w3-animate-left"></a>
+        <a href="downloadTestRes.html"><img src="displayPics/testResults.jpg" class="slideShow w3-animate-left"></a>
+        <a href="assignSubTest.html"><img src="displayPics/testEdit1.jpg" class="slideShow w3-animate-left"></a>
+        <a href="searchTestLabTech.html"><img src="displayPics/testSearch1.jpg" class="slideShow w3-animate-left"></a>
+        
+        </center>
+        
+    </div>
+    <hr style="align-self: baseline">
+    <img src="displayPics/greenCross.jpg" style="height: 50px;">
+    
+       
+    <br>
+    <br>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

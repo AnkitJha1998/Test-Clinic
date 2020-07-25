@@ -57,7 +57,7 @@ Lab Technician also can search for other Tests that are stored
 
 
 ## Radiologist and Pathologist
-Radiologist and Pathologist Have the same UP except that radiology is switched in pathology
+Radiologist and Pathologist Have the same UI except that radiology is switched in pathology
 
 <img width="480" alt="Home" src="https://user-images.githubusercontent.com/37044020/88452162-05fcb180-ce7a-11ea-90d5-51367a3dd39b.png">
 

@@ -1,5 +1,5 @@
 # Test-Clinic
-This was an application which was created during my Internship at Cerner. Here we had to do a Full-Stack Development implementing Buisness logic for a Test Clinic.
+This was an application which was created during my Internship at Cerner in 2020. Here we had to do a Full-Stack Development implementing Buisness logic for a Test Clinic.
 
 
 <img width="480" alt="Build" src="https://user-images.githubusercontent.com/37044020/88452419-262d7000-ce7c-11ea-8b93-061a1fef9040.png">
